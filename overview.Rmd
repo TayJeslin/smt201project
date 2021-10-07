@@ -14,7 +14,7 @@ output:
     toc_depth: 4
 ---
 
-# Title: Finding Capacity City
+# Title: Finding Capital City
 
 ## Project Summary
 Our team is looking at proposing a site for the new capital city based on the accessibility, land suitability, safety (far away from disaster prone areas) while reducing environmental damage and cost.  
@@ -49,7 +49,7 @@ Select a suitable site for the proposed new capital city using the criteria belo
 #### Study Area
 For this project, we will be looking at the East Kalimantan Province and it's cities - Kota Balikpapan, Kota Samarinda, Penajam Paser Utara and Kutai Kartanegara.
 
-![](C:/Users/Jeslin/Downloads/photo6267113092190154102.jpg)
+![](photo6267113092190154102.jpg)
 
 #### Scope of Work
 This list is not exhaustive: 
@@ -64,7 +64,7 @@ This list is not exhaustive:
 
 ## Project Timeline
 
-![](C:/Users/Jeslin/Downloads/image_2021-10-07_18-06-58.png) 
+![](image_2021-10-07_18-06-58.png)
 
 ## Data Source
 ```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
