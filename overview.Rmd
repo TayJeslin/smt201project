@@ -14,51 +14,75 @@ output:
     toc_depth: 4
 ---
 
+# Title: Finding Capacity City
+
+## Project Summary
+Our team is looking at proposing a site for the new capital city based on the accessibility, land suitability, safety (far away from disaster prone areas) while reducing environmental damage and cost.  
+
+## Project Proposal
+
+### Motivation of Project
+We are interested to know how the Indonesian government deems an area fit for capital relocation, and the complexity behind such a decision. Singapore shares close bilateral ties with Indonesia, with Singapore being one of its major foreign investors since 2014. Hence, the decision to relocate Indonesia's capital to East Kalimantan is of high interest to Singapore. 
+
+### Project Objective
+
+#### Task 1
+Prepare a report of survey to be submitted to the National Development Agency including data relating to
+
+* Population and Demographic
+* Economic and Businesses
+* Transport and Communication
+* Infrastructure
+* Environment and Hazard
+
+#### Task 2
+Select a suitable site for the proposed new capital city using the criteria below:
+
+* 4500 to 5500 hectares in size
+* Flat lands preferred 
+* Far away from potential natural disaster risk areas
+* Close proximity to existing urban settlement areas
+* Avoid natural forests
+* Avoid areas prone to forest fire.
+* Highly accessible (road transport, airports and seaports)
+
+#### Study Area
+For this project, we will be looking at the East Kalimantan Province and it's cities - Kota Balikpapan, Kota Samarinda, Penajam Paser Utara and Kutai Kartanegara.
+
+![](C:/Users/Jeslin/Downloads/photo6267113092190154102.jpg)
+
+#### Scope of Work
+This list is not exhaustive: 
+
+* Selection of project area, this year the project area is provided.
+* Data collection, extraction, integration, transformation and wrangling.
+* Designing and building GIS model and database
+* Preparing report of survey
+* Performing site suitability analysis by integrating GIS and multi-criteria evaluation methods.
+* Preparing site suitability analysis report including detail discussion of the analysing method used.
+* Preparing poster and project webpage.
+
+## Project Timeline
+
+![](C:/Users/Jeslin/Downloads/image_2021-10-07_18-06-58.png) 
+
+## Data Source
+```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+tabl <- "  
+| Data source   | Data Format   |     Description            |                 Link                |
+|---------------|:-------------:|-----------------------------------:|-------------:|
+|indonesia-geospasial.com   | Shapefiles | Batas Desa & Data Kependudukan Tahun 2019 Seluruh Indonesia| https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html          |  
+|indonesia-geospasial.com    | Shapefiles      |RBI Provinsi Kalimantan Timur Perwilayah (Kabupaten/Kota) | https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html    |     
+|indonesia-geospasial.com |   TIF Files   |  DEM SRTM 30m, digital elevation model at 30m resolution | https://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html |  
+|indonesia-geospasial.com |   Shapefiles   |  Geological data layer  | https://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html |
+|indonesia-geospasial.com |   Shapefiles   |  Forest fire hot spot data  | https://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html |  
+|indonesia-geospasial.com |   Shapefiles   |  Buildings and Settlements  | https://www.indonesia-geospasial.com/2020/12/download-shp-pemukiman-detail-seluruh.html |
+
+"
+cat(tabl)
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-```
-# 1.0	Introduction
-
-The true power of a GIS is its analytical capability.  GIS analysis functions, however, are generic and are not specifically designed for business intelligence applications.  This is particularly true when the analysis involved massive and large data.  To meet the analytical requirements and analysis efficiency of market researchers and business analysts, we need to combine appropriate GIS functions and analysis for modelling the business processes. 
-
-This hands-on exercise consists of two major sections.  First, you will learn the basic concept of accessibility from geospatial perspective. You will also learn how to use appropriate raster GIS analyse function and mapping techniques to analyse and visualize accessibility maps. 
-
-## 1.1	Data Preparation
-  
-* Two GIS data are available for the analysis.  They are:
-
-* Location of primary, secondary, mixed and JC (i.e. Education).
-Outline map of Singapore (i.e. CoastalOutline).  
-
-### 1.1.1	Add the GIS data into QGIS Project
-
-Before you can start to perform any analysis, you need to start a new QGIS project.  
-
->DIY: Using the steps you had learned from last lesson, add the Education and CoastalOutline into the newly created QGIS project. 
-  
-### 1.1.2	Using attribute query to select a subset from a master layer
-
-The Education layer consists of locations of education institutions such as primary schools, secondary school, mixed and JC.  We are only interested on education institutions that belong to primary and secondary schools.
-
->DIY: Using the steps you had learned from last lesson, extract and save the primary and secondary schools in two separate GIS vector layers.    
-
-Your screen should look similar to the figure below.
-
-![](C:/School 2021/img/image1.jpg)
-
-# 2.0	Raster Data Modelling
-
-In this exercise, you will learn how to model raster data.  The exercise focusses on how to rasterise a vector GIS data layer using QGIS geoprocessing functions.   
-
-## 2.1	Editing attribute data
-
-In this section, you will create a new field in the attribute table of a vector GIS data and update values of the newly created field.  You will name the field as POI_CODE.  The data type of this data field is integer.
-  
-At **Browser** panel, right-click on the Primary Schools layer.
-**Select Open Attribute Table** from the context menu.
-
-The Attribute table dialog window of Primary Schools appears.
-
-
-
 
