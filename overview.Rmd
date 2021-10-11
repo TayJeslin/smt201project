@@ -11,7 +11,7 @@ date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
     toc: true
-    toc_depth: 4
+    toc_depth: 
 ---
 
 # Title: Finding Capital City
