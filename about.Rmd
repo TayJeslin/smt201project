@@ -1,9 +1,9 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "About"
+description:
+  #Some additional details about the website
 ---
-
+This project is done by Bernice Teo, Stella Shinanjaya and Jeslin Tay.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```

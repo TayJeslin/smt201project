@@ -64,7 +64,7 @@ This list is not exhaustive:
 
 ## Project Timeline
 
-![](image_2021-10-07_18-06-58.png)
+![](Project timeline.png)
 
 ## Data Source
 ```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}

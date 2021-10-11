@@ -2,11 +2,10 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-04T17:18:16+08:00"
+      "contents": "\r\nThis project is done by Bernice Teo, Stella Shinanjaya and Jeslin Tay.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-10-11T16:11:39+08:00"
     },
     {
       "path": "index.html",
