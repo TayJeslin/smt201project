@@ -5,7 +5,9 @@ description: |
 site: distill::distill_website
 ---
 
-Welcome to Team 12's Project!
+# <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Welcome to Team 12's GIS Project!</span>
+
+![](logo.png)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)

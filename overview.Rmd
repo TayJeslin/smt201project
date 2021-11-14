@@ -15,7 +15,6 @@ output:
 
 # <span style="font-family:DM Sans;color:#2E6173;font-size:1.5em;">Title: Finding Capital City</span>
 
-![](logo.png)
 
 ## <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Project Summary</span>
 Our team is looking at proposing a site for the new capital city based on the accessibility, land suitability, safety (far away from disaster prone areas) while reducing environmental damage and cost.  
