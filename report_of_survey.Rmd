@@ -1,0 +1,23 @@
+---
+title: "Report of Survey Indonesia New National Capital Development Plan"
+description: "In this section, we consolidated several reasons and researches on why there is a need for the new capital city to be rebuilt."
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+---
+
+![](Jakarta.jpg)
+
+<span style=color:#2E6173;font-size:1em;">Through a press conference held in Jakarta in 2019, Indonesia’s President, President Joko Widodo, announced the plan to move Indonesia’s capital from **Jakarta on the Java island** to the **East Kalimantan province on the Kalimantan island**. It was determined after extensive research that the new capital would be built in part of two regencies in East Kalimantan province: **Penajam Paser Utara regency** and **Kutai Kartanegara regency**. 
+
+<span style=color:#2E6173;font-size:1em;">The move is said to be part of a strategic plan **to relieve the strain on Jakarta and Java island** which has been facing serious congestion and environmental issues over the last decade. This is attributed to the fact that the island houses close to 60% of the Indonesian population (that is close to 164 million people) and is responsible for more than 50% of the country’s economic activity (Lyons, 2019). On top of these reasons, the most deciding factor for the move is the fact that Jakarta is sinking. 
+Approximately 40% of the city lies below sea level and it continues sinking at **a rate of 20cm per year**. This has resulted in devastating floods of up to 3m deep yearly, resulting in the displacement of 170,000 people. While the decision to relocate the capital city was not an easy one, it was crucial to prevent the state of Jakarta from worsening further. 
+
+<span style=color:#2E6173;font-size:1em;">There are many reasons why East Kalimantan, more precisely the area in part of Penajam Paser Utara and Kutai Kartanegara regency was chosen as the ideal location to build the capital city. This area is in close proximity to two of the most major cities in East Kalimantan - **Kota Balikpapan** and **Kota Samarinda**. Hence, the economic activity in this area is already thriving, which **provides a good foundation to build Indonesia’s new centre of economy**. Furthermore, the site has **minimal risks of natural disasters** such as flooding, earthquake and volcanic eruptions. The site is also strategically at the centre of Indonesia, making the new capital city a truly accessible centre of development in the future.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+

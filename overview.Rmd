@@ -1,7 +1,6 @@
 ---
 title: "Overview"
 description: |
-  GIS Project overview
 author:
   - name: Jeslin Tay 
     url: 
@@ -14,19 +13,21 @@ output:
     toc_depth: 4
 ---
 
-# Title: Finding Capital City
+# <span style="font-family:DM Sans;color:#2E6173;font-size:1.5em;">Title: Finding Capital City</span>
 
-## Project Summary
+![](logo.png)
+
+## <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Project Summary</span>
 Our team is looking at proposing a site for the new capital city based on the accessibility, land suitability, safety (far away from disaster prone areas) while reducing environmental damage and cost.  
 
-## Project Proposal
+## <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Project Proposal</span>
 
-### Motivation of Project
-We are interested to know how the Indonesian government deems an area fit for capital relocation, and the complexity behind such a decision. Singapore shares close bilateral ties with Indonesia, with Singapore being one of its major foreign investors since 2014. Hence, the decision to relocate Indonesia's capital to East Kalimantan is of high interest to Singapore. 
+### <span style="font-family:DM Sans;color:#2E6173;font-size:0.8em;">Motivation of Project</span>
+The goal of this project is to determine the suitable site of the new capital city in the predetermined area that is in part of Kutai Kartanegara and Penajam Paser Utara regency. Utilising geospatial analysis methods as well as geographic information systems, we aim to derive potential suitable sites for the new capital city after taking into account important factors that should be considered when choosing the optimal location of a capital city. We believe that performing a geospatial analysis ensures a more informed decision-making process which is extremely important considering the outcome could greatly affect the prosperity of Indonesia and the lives of many Indonesians.  
 
-### Project Objective
+### <span style="font-family:DM Sans;color:#2E6173;font-size:0.8em;">Project Objective</span>
 
-#### Task 1
+#### <span style="font-family:DM Sans;color:#2E6173;font-size:0.75em;">Task 1</span>
 Prepare a report of survey to be submitted to the National Development Agency including data relating to
 
 * Population and Demographic
@@ -35,7 +36,7 @@ Prepare a report of survey to be submitted to the National Development Agency in
 * Infrastructure
 * Environment and Hazard
 
-#### Task 2
+#### <span style="font-family:DM Sans;color:#2E6173;font-size:0.75em;">Task 2</span>
 Select a suitable site for the proposed new capital city using the criteria below:
 
 * 4500 to 5500 hectares in size
@@ -46,12 +47,12 @@ Select a suitable site for the proposed new capital city using the criteria belo
 * Avoid areas prone to forest fire.
 * Highly accessible (road transport, airports and seaports)
 
-#### Study Area
+#### <span style="font-family:DM Sans;color:#2E6173;font-size:0.75em;">Study Area</span>
 For this project, we will be looking at the East Kalimantan Province and it's cities - Kota Balikpapan, Kota Samarinda, Penajam Paser Utara and Kutai Kartanegara.
 
 ![](photo6267113092190154102.jpg)
 
-#### Scope of Work
+#### <span style="font-family:DM Sans;color:#2E6173;font-size:0.75em;">Scope of Work</span>
 This list is not exhaustive: 
 
 * Selection of project area, this year the project area is provided.
@@ -62,11 +63,11 @@ This list is not exhaustive:
 * Preparing site suitability analysis report including detail discussion of the analysing method used.
 * Preparing poster and project webpage.
 
-## Project Timeline
+## <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Project Timeline</span>
 
 ![](Project timeline.png)
 
-## Data Source
+## <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Data Source</span>
 ```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 tabl <- "  
 | Data source   | Data Format   |     Description            |                 Link                |

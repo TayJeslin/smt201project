@@ -86,26 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>SMT201 GIS Project Website: About this site</title>
+  <title>SMT201 GIS Project Website: Data Preparation</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="SMT201 GIS Project Website: About this site"/>
+  <meta property="og:title" content="SMT201 GIS Project Website: Data Preparation"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="SMT201 GIS Project Website"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="SMT201 GIS Project Website: About this site"/>
+  <meta property="twitter:title" content="SMT201 GIS Project Website: Data Preparation"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this site"]},{"type":"NULL"}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Data Preparation"]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2050,7 +2050,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this site","authors":[]}
+{"title":"Data Preparation","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2077,7 +2077,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this site</h1>
+<h1>Data Preparation</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2085,7 +2085,480 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p>This GIS project is done by Bernice Teo, Stella Shinanjaya and Jeslin Tay.</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#derive-study-area"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Derive Study Area</span></a>
+<ul>
+<li><a href="#load-vector-layer"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">1. Load Vector Layer</span></a></li>
+<li><a href="#select-study-area-from-east-kalimantan-layer"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">2. Select Study Area From East Kalimantan Layer</span></a></li>
+</ul></li>
+<li><a href="#preparing-vector-layers-of-site-selection-criteria"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Preparing Vector Layers of Site Selection Criteria</span></a>
+<ul>
+<li><a href="#natural-forest"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">1. Natural Forest</span></a></li>
+<li><a href="#river"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">2. River</span></a></li>
+<li><a href="#road-transport-network"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">3. Road Transport Network</span></a></li>
+<li><a href="#airport"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">4. Airport</span></a></li>
+<li><a href="#seaport"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">5. Seaport</span></a></li>
+<li><a href="#forest-fire-hotspots"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">6. Forest Fire Hotspots</span></a></li>
+<li><a href="#slope"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">7. Slope</span></a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h2 id="derive-study-area"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Derive Study Area</span></h2>
+<p>Our study area covers all sub-districts and district of Kota Balipapan, Kota Samarinda, and selected kecamatan (districts) and sub-districts of North Penajam Paser and Kutai Kartanegara Regencies.</p>
+<p>Kutai Kartanegara : Anggana, Loa Janan, Loa Kulu, Marang Kayu, Muara Jawa, Samboja, Sanga Sanga, Sebulu Tenaggarong, Tenggarong Seberang and Muara Badak.</p>
+<p>North Penajam Paser (Penajam Paser Utara) Regency: Babulu, Penajam, Sepaku and Waru.</p>
+<blockquote>
+<p>Data sources are found at the end of our Overview page</p>
+</blockquote>
+<h3 id="load-vector-layer"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">1. Load Vector Layer</span></h3>
+<p>We extracted BATAS_DESA_DESEMBER_2019_DUKCAPIL_KALIMANTAN_TIMUR.shp from Sub-district Boundary &amp; Census Data 2019, Indonesia folder in the Browser panel.</p>
+<p><img src="1.PNG" /></p>
+<h3 id="select-study-area-from-east-kalimantan-layer"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">2. Select Study Area From East Kalimantan Layer</span></h3>
+<ul>
+<li>At layer panel, right-click on <strong>BATAS_DESA_DESEMBER_2019_DUKCAPIL_KALIMANTAN_TIMUR.shp</strong>.</li>
+<li>From the context menu, click on <strong>Open Attribute Table</strong>.</li>
+<li>At the Attribute Table window click on <strong>Select feature using an expression</strong> icon.</li>
+<li>At the upper left corner of the window, click on the Expression tab.</li>
+<li>In the Expression tab, type the following expressions:</li>
+</ul>
+<p><em>“KECAMATAN” = ‘ANGGANA’ or “KECAMATAN” = ‘LOA JANAN’ or “KECAMATAN” = ‘LOA KULU’ or “KECAMATAN” = ‘MARANG KAYU’ or “KECAMATAN” = ‘MUARA JAWA’ or “KECAMATAN” = ‘SAMBOJA’ or “KECAMATAN” = ‘SANGA SANGA’ or “KECAMATAN” = ‘SEBULU’ or “KECAMATAN” = ‘TENGGARONG SEBERANG’ or “KECAMATAN” = ‘MUARA BADAK’ or “KECAMATAN” = ‘BABULU’ or “KECAMATAN” = ‘PENAJAM’ or “KECAMATAN” = ‘SEPAKU’ or “KECAMATAN” = ‘WARU’ or “KECAMATAN” = ‘TENGGARONG’ or “KAB_KOTA” = ‘KOTA SAMARINDA’ or “KAB_KOTA” = ‘KOTA BALIKPAPAN’</em></p>
+<ul>
+<li>The result should look like the screenshot below</li>
+</ul>
+<p><img src="2.PNG" /></p>
+<ul>
+<li>The study area is then derived from the selected features of the BATAS_DESA_DESEMBER_2019_DUKCAPIL_KALIMANTAN_TIMUR.shp.</li>
+<li>At layer panel, right-click on <strong>BATAS_DESA_DESEMBER_2019_DUKCAPIL_KALIMANTAN_TIMUR.shp</strong>.</li>
+<li>Select <strong>Export → Save Selected Features As</strong> from the context menu.</li>
+<li>For <strong>Format:</strong>, select <strong>GeoPackage</strong> from the drop-down list.</li>
+<li>For <strong>Save as</strong>, click on the <strong>Browse</strong> button.</li>
+<li>Navigate to the folder where the QGIS project is saved.</li>
+<li>For File Name, type <strong>Indo</strong>.</li>
+<li>Click on the <strong>Save</strong> button.</li>
+</ul>
+<p>You will return to <strong>Save Vector Layer</strong> as dialog window.</p>
+<ul>
+<li>For <strong>Layer Name</strong>, type <strong>Study Area</strong>.</li>
+<li>For <strong>CRS</strong>, click on the <strong>Browse</strong> button.</li>
+</ul>
+<p>The <strong>Coordinate Reference System Selector</strong> dialog window appears.</p>
+<ul>
+<li>Click on <strong>DGN95 / Indonesia TM-3 Zone 54.1</strong>.</li>
+<li>Click on <strong>OK</strong> to update the selection.</li>
+</ul>
+<p>A new geospatial layer called <strong>Study Area</strong> is now added to the Layers panel, just like the screenshot below.</p>
+<p><img src="3.PNG" /></p>
+<h2 id="preparing-vector-layers-of-site-selection-criteria"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Preparing Vector Layers of Site Selection Criteria</span></h2>
+<h3 id="natural-forest"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">1. Natural Forest</span></h3>
+<ul>
+<li>From the <strong>Browser</strong> panel, look for the folders of the individual Topography data of the City/Regency downloaded earlier. It should look like the screenshot below.</li>
+</ul>
+<p><img src="4.PNG" /></p>
+<ul>
+<li>From each of the individual folders, load all the natural forests vector layers <strong>(NONAGRIALANG_AR_50K / NONAGRIHUTANBASAH_AR_50K / NONAGRISEMAKBELUKAR_AR_50K / NONAGRIHUTANKERING_AR_50K)</strong> by clicking on the shapefiles.</li>
+<li>Once all the relevant vector layers have been added to the Project, the Layers panel would appear as the screenshot below</li>
+</ul>
+<p><img src="5.PNG" /></p>
+<p>Merge all natural forests vector layer</p>
+<ul>
+<li>To merge all the natural forests vector layer, from the menu bar, click on <strong>Vector → Data Management Tools → Merge Vector Layers</strong></li>
+<li>From <strong>Merge Vector Layers</strong> window, click on the right-most button of the <strong>Input Layers</strong> as shown below</li>
+</ul>
+<p><img src="6.PNG" /></p>
+<ul>
+<li>Proceed to select all the natural forests layer to be merged, just as shown in the screenshot below</li>
+</ul>
+<p><img src="7.PNG" /></p>
+<ul>
+<li>Click the <strong>back arrow</strong> on the left side of Input Layers to go back to the initial page</li>
+<li>For <strong>Destination CRS</strong>, click on <strong>DGN95</strong> to set the appropriate CRS to the Merged layer</li>
+</ul>
+<p><img src="8.PNG" /></p>
+<ul>
+<li>Click on <strong>Run</strong> to execute the process</li>
+<li>The temporary <strong>Merged</strong> output layer will now appear on the <strong>Layers</strong> panel</li>
+<li>Right click on the <strong>Merged</strong> layer from the <strong>Layer</strong> panels and click on <strong>Make Permanent</strong></li>
+<li>Save the file in ESRI Shapefile format</li>
+</ul>
+<p>Clip Merged vector Layer to include only those within the study area</p>
+<ul>
+<li>As we are only interested in the natural forests that fall within the study area, we need to Clip the current Merged vector layer</li>
+<li>From the menu bar, click on <strong>Processing → Toolbox</strong></li>
+<li>From the <strong>Processing Toolbox</strong> search bar, type Clip and click on <strong>Clip vector by mask layer</strong></li>
+</ul>
+<p><img src="9.PNG" /></p>
+<ul>
+<li>From the Clip vector by mask layer window, set the Input Layer as Merged and the Mask layer as Study Area as shown in the screenshot below</li>
+</ul>
+<p><img src="10.PNG" /></p>
+<ul>
+<li>Click <strong>Run</strong> to execute the process</li>
+</ul>
+<p>Save Clipped layer into GeoPackage</p>
+<ul>
+<li>At the layer panel, right-click on the <strong>Clipped (mask)</strong> layer.</li>
+<li>Select <strong>Export → Save Features As</strong> from the context menu.</li>
+<li>For <strong>Format:</strong>, select <strong>GeoPackage</strong> from the drop-down list.</li>
+<li>For <strong>Save as</strong>, click on the <em>Browse</em> button.</li>
+<li>Navigate to the folder where the QGIS project is saved.</li>
+<li>Click on Indo.gpkg</li>
+<li>Click on the <strong>Save</strong> button.</li>
+</ul>
+<p>You will return to the <strong>Save Vector Layer</strong> as dialog window.</p>
+<ul>
+<li>For <strong>Layer Name</strong>, type <strong>forest</strong>.</li>
+<li>For <strong>CRS</strong>, click on the <strong>Browse</strong> button.</li>
+</ul>
+<p>The Coordinate Reference System Selector dialog window appears.</p>
+<ul>
+<li>Click on <strong>DGN95 / Indonesia TM-3 Zone 54.1</strong>.</li>
+<li>Click on <strong>OK</strong> to save the layer.</li>
+</ul>
+<h3 id="river"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">2. River</span></h3>
+<p>Load vector layers</p>
+<ul>
+<li>From the <strong>Browser</strong> panel, look for the folders of the individual Topography data of the City/Regency downloaded earlier. It should look like the screenshot below.</li>
+</ul>
+<p><img src="11.PNG" /></p>
+<ul>
+<li>From each of the individual folders, load all the river vector layers <strong>(SUNGAI_AR_50K)</strong> by clicking on the shapefiles.</li>
+<li>Once all the relevant vector layers have been added to the Project, the Layers panel would appear as the screenshot below</li>
+</ul>
+<p><img src="12.PNG" /></p>
+<p>Merge all river vector layer</p>
+<ul>
+<li><p>To merge all the river vector layer, from the menu bar, click on <strong>Vector → Data Management Tools → Merge Vector Layers</strong></p></li>
+<li><p>From <strong>Merge Vector Layers</strong> window, click on the right-most button of the <strong>Input Layers</strong> as shown below</p></li>
+</ul>
+<p><img src="6.PNG" /></p>
+<ul>
+<li>Proceed to select all the river layers to be merged, just as shown in the screenshot below</li>
+</ul>
+<p><img src="13.PNG" /></p>
+<ul>
+<li><p>Click the <strong>back</strong> arrow on the left side of Input Layers to go back to the initial page</p></li>
+<li><p>For <strong>Destination CRS</strong>, click on <strong>DGN95</strong> to set the appropriate CRS to the Merged layer</p></li>
+</ul>
+<p><img src="14.PNG" /></p>
+<ul>
+<li>Cick on <strong>Run</strong> to execute the process</li>
+<li>The temporary <strong>Merged</strong> output layer will now appear on the Layers panel</li>
+<li>Right click on the <strong>Merged</strong> layer from the Layer panels and click on Make Permanent</li>
+<li>Save the file in ESRI Shapefile format</li>
+</ul>
+<p>Clip Merged vector layer to include only those within the study area</p>
+<ul>
+<li>As we are only interested in the river that fall within the study area, we need to Clip the current Merged vector layer</li>
+<li>From the menu bar, click on Processing → Toolbox</li>
+<li>From the <strong>Processing Toolbox</strong> search bar, type Clip and click on <strong>Clip vector by mask layer</strong></li>
+</ul>
+<p><img src="15.PNG" /></p>
+<ul>
+<li>From the Clip vector by mask layer window, set the <strong>Input Layer</strong> as <strong>Merged</strong> and the <strong>Mask layer</strong> as <strong>Study Area</strong> as shown in the screenshot below</li>
+</ul>
+<p><img src="16.PNG" /></p>
+<ul>
+<li>Click <strong>Run</strong> to execute the process</li>
+</ul>
+<p>Save Clipped layer into GeoPackage</p>
+<ul>
+<li>At the layer panel, right-click on the Clipped (mask) layer.</li>
+<li>Select <strong>Export → Save Features As</strong> from the context menu.</li>
+<li>For <strong>Format:</strong>, select <strong>GeoPackage</strong> from the drop-down list.</li>
+<li>For <strong>Save as</strong>, click on the <em>Browse</em> button.</li>
+<li>Navigate to the folder where the QGIS project is saved.</li>
+<li>Click on Indo.gpkg</li>
+<li>Click on the <strong>Save</strong> button.</li>
+</ul>
+<p>You will return to the <strong>Save Vector Layer</strong> as dialog window.</p>
+<ul>
+<li>For Layer Name, type <strong>river</strong>.</li>
+<li>For <strong>CRS</strong>, click on the <strong>Browse</strong> button.</li>
+</ul>
+<p>The Coordinate Reference System Selector dialog window appears.</p>
+<ul>
+<li>Click on <strong>DGN95 / Indonesia TM-3 Zone 54.1</strong>.</li>
+<li>Click on <strong>OK</strong> to save the layer.</li>
+</ul>
+<h3 id="road-transport-network"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">3. Road Transport Network</span></h3>
+<p>Load vector layers</p>
+<ul>
+<li>From the <strong>Browser</strong> panel, look for the folders of the individual Topography data of the City/Regency downloaded earlier. It should look like the screenshot below.</li>
+</ul>
+<p><img src="17.PNG" /></p>
+<ul>
+<li>From each of the individual folders, load all the road vector layers <strong>(JALAN_LN_50K)</strong> by clicking on the shapefiles.</li>
+<li>Once all the relevant vector layers have been added to the Project, the Layers panel would appear as the screenshot below</li>
+</ul>
+<p><img src="18.PNG" /></p>
+<p>Merge All Road Vector Layer</p>
+<ul>
+<li>To merge all the road vector layer, from the menu bar, click on <strong>Vector → Data Management Tools → Merge Vector Layers</strong></li>
+<li>From <strong>Merge Vector Layers</strong> window, click on the right-most button of the <strong>Input Layers</strong> as shown below</li>
+</ul>
+<p><img src="6.PNG" /></p>
+<ul>
+<li>Proceed to select all the road layers to be merged, just as shown in the screenshot below</li>
+</ul>
+<p><img src="19.PNG" /></p>
+<ul>
+<li>Click the <strong>back arrow</strong> on the left side of Input Layers to go back to the initial page For <strong>Destination CRS</strong>, click on <strong>DGN95</strong> to set the appropriate CRS to the Merged layer</li>
+</ul>
+<p><img src="20.PNG" /></p>
+<ul>
+<li>Click on <strong>Run</strong> to execute the process</li>
+<li>The temporary <strong>Merged</strong> output layer will now appear on the Layers panel</li>
+<li>To remove duplicate, type <strong>Delete Duplicate Geometries</strong> on the Processing Toolbox</li>
+<li>Select <strong>Merged</strong> road layer as the <strong>Input layer</strong></li>
+</ul>
+<p><img src="21.PNG" /></p>
+<ul>
+<li>Click <strong>Run</strong> to execute the process</li>
+<li>Right click on the <strong>Merged</strong> layer from the Layer panels and click on Make Permanent</li>
+<li>Save the file in ESRI Shapefile format</li>
+</ul>
+<p>Clip Vector Layer to include only those in the Study Area</p>
+<ul>
+<li>As we are only interested in the road that fall within the study area, we need to Clip the current Merged vector layer</li>
+<li>From the menu bar, click on <strong>Processing → Toolbox</strong></li>
+<li>From the <strong>Processing Toolbox</strong> search bar, type Clip and click on <strong>Clip vector by mask layer</strong></li>
+</ul>
+<p><img src="21.PNG" /></p>
+<ul>
+<li>From the Clip vector by mask layer window, set the <strong>Input Layer</strong> as <strong>Merged</strong> and the <strong>Mask layer</strong> as <strong>Study Area</strong> as shown in the screenshot below</li>
+</ul>
+<p><img src="23.PNG" /></p>
+<ul>
+<li>Click <strong>Run</strong> to execute the process</li>
+</ul>
+<p>Save Clipped layer into GeoPackage</p>
+<ul>
+<li>At the layer panel, right-click on the <strong>Clipped (mask) layer</strong>.</li>
+<li>Select <strong>Export → Save Features As</strong> from the context menu.</li>
+<li>For <strong>Format:</strong>, select <strong>GeoPackage</strong> from the drop-down list.</li>
+<li>For <strong>Save as</strong>, click on the <em>Browse</em> button.</li>
+<li>Navigate to the folder where the QGIS project is saved.</li>
+<li>Click on Indo.gpkg</li>
+<li>Click on the <strong>Save</strong> button.</li>
+</ul>
+<p>You will return to the Save Vector Layer as dialog window.</p>
+<ul>
+<li>For <strong>Layer Name</strong>, type <strong>road</strong>.</li>
+<li>For <strong>CRS</strong>, click on the <em>Browse</em> button.</li>
+</ul>
+<p>The Coordinate Reference System Selector dialog window appears.</p>
+<ul>
+<li>Click on <strong>DGN95 / Indonesia TM-3 Zone 54.1</strong>.</li>
+<li>Click <strong>OK</strong> to save the layer.</li>
+</ul>
+<h3 id="airport"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">4. Airport</span></h3>
+<p>Load Vector Layers</p>
+<ul>
+<li>From the <strong>Browser</strong> panel, look for the folders of the individual Topography data of the City/Regency downloaded earlier. It should look like the screenshot below.</li>
+</ul>
+<p><img src="11.PNG" /></p>
+<ul>
+<li>From each of the individual folders, load all the airport vector layers <strong>(AIRPORT_PT_50K)</strong> by clicking on the shapefiles.</li>
+<li>Once all the relevant vector layers have been added to the Project, the Layers panel would appear as the screenshot below</li>
+</ul>
+<p><img src="24.PNG" /></p>
+<p>Merge All Airport Vector Layer</p>
+<ul>
+<li>To merge all the airport vector layer, from the menu bar, click on <strong>Vector → Data Management Tools → Merge Vector Layers</strong></li>
+<li>From <strong>Merge Vector Layers</strong> window, click on the right-most button of the Input Layers as shown below</li>
+</ul>
+<p><img src="6.PNG" /></p>
+<ul>
+<li>Proceed to select all the airport layers to be merged, just as shown in the screenshot below</li>
+</ul>
+<p><img src="25.PNG" /></p>
+<ul>
+<li>Click the <strong>back arrow</strong> on the left side of Input Layers to go back to the initial page For <strong>Destination CRS</strong>, click on <strong>DGN95</strong> to set the appropriate CRS to the Merged layer</li>
+</ul>
+<p><img src="14.PNG" /></p>
+<ul>
+<li>Click on <strong>Run</strong> to execute the process</li>
+<li>The temporary <em>Merged</em> output layer will now appear on the Layers panel</li>
+<li>Right click on the <strong>Merged</strong> layer from the Layer panels and click on Make Permanent</li>
+<li>Save the file in ESRI Shapefile format</li>
+</ul>
+<p>Select airports within the study area</p>
+<ul>
+<li>From the menu bar, click on <strong>Vector → Research Tools → Select by location</strong></li>
+<li>The <strong>Select by Location</strong> window will appear on the screen</li>
+<li>For <strong>Select features from</strong>, select the <strong>Merged</strong> airport layer from the dropdown</li>
+<li>For <strong>Geometric predicate</strong>, check the <strong>are within</strong> checkbox</li>
+<li>For <strong>By comparing to the features from</strong>, select the <strong>Study Area</strong> vector layer from the dropdown</li>
+<li>The <strong>Select by Location</strong> window should appear as below</li>
+</ul>
+<p><img src="26.PNG" /></p>
+<p>Save selected features into GeoPackage</p>
+<ul>
+<li>From the screen, you would be able to see that the airports within the Study Area have been highlighted in yellow</li>
+<li>To keep only the selected airports, right click on the <strong>Merged</strong> layer from the Layers panel</li>
+<li>Click on <strong>Export → Save Selected Features As</strong></li>
+<li>From the <strong>Format</strong> dropdown, choose GeoPackage</li>
+<li>For the <strong>File name</strong>, click on the <em>Browse</em> button at the end of the type bar</li>
+<li>Navigate to the folder where the QGIS Project file has been saved</li>
+<li>Select <strong>Indo.gkpg</strong> and click on the <strong>Save</strong> button</li>
+<li>As for the <strong>Layer name</strong>, type <strong>airport</strong></li>
+<li>For the <strong>CRS</strong>, select <strong>DGN95</strong> from the dropdown</li>
+<li>Click <strong>Ok</strong> to Save the selected features</li>
+<li>Click <strong>Run</strong> to execute the process</li>
+</ul>
+<h3 id="seaport"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">5. Seaport</span></h3>
+<p>Load Vector Layers</p>
+<ul>
+<li>From the <strong>Browser</strong> panel, look for the folders of the individual Topography data of the City/Regency downloaded earlier. It should look like the screenshot below.</li>
+</ul>
+<p><img src="11.PNG" /></p>
+<ul>
+<li>From each of the individual folders, load all the seaport vector layers <strong>(PELABUHAN_PT_50K)</strong> by clicking on the shapefiles.</li>
+<li>Once all the relevant vector layers have been added to the Project, the Layers panel would appear as the screenshot below</li>
+</ul>
+<p><img src="27.PNG" /></p>
+<p>Merge All Seaport Vector Layer</p>
+<ul>
+<li>To merge all the seaport vector layer, from the menu bar, click on <strong>Vector → Data Management Tools → Merge Vector Layers</strong></li>
+<li>From <strong>Merge Vector Layers</strong> window, click on the right-most button of the <strong>Input Layers</strong> as shown below</li>
+</ul>
+<p><img src="6.PNG" /></p>
+<ul>
+<li>Proceed to select all the seaport layers to be merged, just as shown in the screenshot below</li>
+</ul>
+<p><img src="28.PNG" /></p>
+<ul>
+<li>Click the <strong>back arrow</strong> on the left side of Input Layers to go back to the initial page For <strong>Destination CRS</strong>, click on <strong>DGN95</strong> to set the appropriate CRS to the Merged layer</li>
+</ul>
+<p><img src="14.PNG" /></p>
+<ul>
+<li>Click on <strong>Run</strong> to execute the process</li>
+<li>The temporary <strong>Merged</strong> output layer will now appear on the Layers panel</li>
+<li>Right click on the Merged layer from the Layer panels and click on Make Permanent</li>
+<li>Save the file in ESRI Shapefile format</li>
+</ul>
+<p>Select seaports within the study area</p>
+<ul>
+<li>From the menu bar, click on <strong>Vector → Research Tools → Select by location</strong></li>
+<li>The <strong>Select by Location</strong> window will appear on the screen</li>
+<li>For <strong>Select features from</strong>, select the <strong>Merged</strong> seaport layer from the dropdown</li>
+<li>For <strong>Geometric predicate</strong>, check the <strong>are within</strong> checkbox</li>
+<li>For <strong>By comparing to the features from</strong>, select the <strong>Study Area</strong> vector layer from the dropdown The <strong>Select by Location</strong> window should appear as below</li>
+</ul>
+<p><img src="29.PNG" /></p>
+<ul>
+<li>Click <strong>Run</strong> to execute the process</li>
+</ul>
+<p>Save selected features into GeoPackage</p>
+<ul>
+<li>From the screen, you would be able to see that the seaports within the Study Area have been highlighted in yellow</li>
+<li>To keep only the selected seaports, right click on the <strong>Merged</strong> layer from the Layers panel</li>
+<li>Click on <strong>Export → Save Selected Features As</strong></li>
+<li>From the <strong>Format</strong> dropdown, choose <strong>GeoPackage</strong></li>
+<li>For the <strong>File name</strong>, click on the <em>Browse</em> button at the end of the type bar</li>
+<li>Navigate to the folder where the QGIS Project file has been saved</li>
+<li>Select <strong>Indo.gkpg</strong> and click on the <strong>Save</strong> button</li>
+<li>As for the <strong>Layer name</strong>, type <strong>seaport</strong></li>
+<li>For the <strong>CRS</strong>, select <strong>DGN95</strong> from the dropdown</li>
+<li>Click <strong>Ok</strong> to Save the selected features</li>
+</ul>
+<h3 id="forest-fire-hotspots"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">6. Forest Fire Hotspots</span></h3>
+<p>Load Vector Layers</p>
+<ul>
+<li>From the <strong>Browser</strong> panel, look for the folders of Indonesia’s Forest Fire Hotspots downloaded earlier. It should look like the screenshot below.</li>
+</ul>
+<p><img src="30.PNG" /></p>
+<ul>
+<li>From the folder, load forest fire hotspot vector layer <strong>(Titik Api Hotspot se-Indonesia Tahun 2019.shp)</strong> by clicking on the shapefiles.</li>
+<li>Once the relevant vector layer has been added to the Project, the Layers panel would appear as the screenshot below</li>
+</ul>
+<p><img src="31.PNG" /></p>
+<p>Select forest fire hotspots within the study area</p>
+<ul>
+<li>Click on the <strong>Titik Api Hotspot se-Indonesia Tahun 2019</strong> vector layer from the Layers panel to make it the active layer</li>
+<li>Click on the <strong>Select Feature by Freehand</strong> tool from the icon bar</li>
+<li>Outline the Study Area</li>
+<li>From the screen, you would be able to see that the fire hotspots within the Study Area have been highlighted in yellow</li>
+</ul>
+<p>Save selected features into GeoPackage</p>
+<ul>
+<li>To keep only the selected forest fire hotspots, right click on the <strong>Titik Api Hotspot se-Indonesia Tahun 2019</strong> vector layer from the Layers panel</li>
+<li>Click on <strong>Export → Save Selected Features As</strong></li>
+<li>From the <strong>Format</strong> dropdown, choose <strong>GeoPackage</strong></li>
+<li>For the <strong>File name</strong>, click on the <em>Browse</em> button at the end of the type bar</li>
+<li>Navigate to the folder where the QGIS Project file has been saved</li>
+<li>Select <strong>Indo.gkpg</strong> and click on the <strong>Save</strong> button</li>
+<li>As for the <strong>Layer name</strong>, type <strong>forest_fire_hotspots</strong></li>
+<li>For the <strong>CRS</strong>, select <strong>DGN95</strong> from the dropdown</li>
+<li>Click <strong>Ok</strong> to Save the selected features</li>
+</ul>
+<h3 id="slope"><span style="font-family:DM Sans;color:#2E6173;font-size:1em;">7. Slope</span></h3>
+<p>Load TIFF layer</p>
+<ul>
+<li>From the Browser panel, click on DEM SRTM 30m, digital elevation model at 30m resolution folder.</li>
+<li>Drag and drop <em>DEM SRTM 30m Provinsi Kalimantan Timur.tif</em> into Layers panel.</li>
+</ul>
+<p>Clip layer by extent of study area</p>
+<ul>
+<li>From the menu bar, select <strong>Raster → Extraction → Clip Raster by Extent</strong>.</li>
+<li>For the <strong>input layer</strong>, select <em>DEM SRTM 30m Provinsi Kalimantan Timur</em> from the drop-down list.</li>
+<li>For <strong>Clipping extent</strong>, click on the icon at the end of the option then select <strong>Calculate from Layer</strong>.</li>
+<li>Select <strong>DEM</strong> from the drop-down list.</li>
+<li>When you are ready, click on the Run button.</li>
+<li>When the process is completed, read the process log to ensure that there is no error.</li>
+<li>Click on the <strong>Close</strong> button to close the dialog window.</li>
+<li>Notice that a new raster layer called Clipped (extent) is added into the Layers panel and displayed on the View as shown in the screenshot below.</li>
+</ul>
+<p><img src="32.PNG" /></p>
+<p>Save Clipped layer into GeoPackage</p>
+<ul>
+<li>At the Layers panel, right-click on the <strong>Clipped (extent)</strong> layer.</li>
+<li>Select <strong>Export → Save As</strong> from the context menu.</li>
+<li>For <strong>Format:</strong>, select <strong>GeoPackage</strong> from the drop-down list.</li>
+<li>For <strong>Save as</strong>, click on the <em>Browse</em> button.</li>
+<li>Navigate to the folder where the QGIS project is saved.</li>
+<li>Click on <strong>Indo.gpkg</strong></li>
+<li>Click on the <strong>Save</strong> button.</li>
+</ul>
+<p>You will return to <strong>Save Raster Layer</strong> as dialog window.</p>
+<ul>
+<li>For <strong>Layer name</strong>, type <strong>DEM</strong>.</li>
+<li>For <strong>CRS</strong>, click on the <em>Browse</em> button.</li>
+</ul>
+<p>The Coordinate Reference System Selector dialog window appears.</p>
+<ul>
+<li>Click on <strong>DGN95 / Indonesia TM-3 Zone 54.1</strong>.</li>
+<li>Click on <strong>OK</strong> to save the clipped raster layer.</li>
+</ul>
+<p>Derive slope raster layer</p>
+<ul>
+<li>From the menu bar, click on <strong>Raster → Analysis → Slope</strong></li>
+<li>In the Slope dialog window, select <strong>DEM</strong> for the Input layer, just as shown in the screenshot below</li>
+</ul>
+<p><img src="33.PNG" /></p>
+<ul>
+<li>Click on the <strong>Run</strong> button</li>
+<li>A temporary layer called <strong>Slope</strong> will be added to the Layers panel</li>
+</ul>
+<p><img src="34.PNG" /></p>
+<p>Save the Slope layer into GeoPackage</p>
+<ul>
+<li>From the Layers panel, right-click on the temporary <strong>Slope</strong> layer</li>
+<li>Click on <strong>Export → Save As</strong></li>
+<li>Inside the <strong>Save Raster Layer As</strong> window, select <strong>GeoPackage</strong> as the Format</li>
+<li>For <strong>File name</strong>, click on the <em>Browse</em> button</li>
+<li>Navigate to the folder where the QGIS file is saved</li>
+<li>Select <strong>Indo.gpkg</strong> and click on the <strong>Save</strong> button</li>
+<li>For <strong>Layer name</strong>, type <strong>slope</strong></li>
+<li>For <strong>CRS</strong>, select <strong>DGN95</strong> from the dropdown</li>
+<li>For the <strong>Extent</strong>, click on the <strong>Calculate from Layer</strong> dropdown and select the <strong>DEM</strong></li>
+<li>Set the horizontal and vertical resolutions as <strong>5</strong></li>
+<li>Click <strong>Ok</strong> to save the layer</li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

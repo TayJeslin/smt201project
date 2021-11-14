@@ -1,0 +1,14 @@
+---
+title: "Poster"
+description: |
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+---
+![](poster.jpg)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
