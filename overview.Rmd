@@ -2,7 +2,7 @@
 title: "Overview"
 description: |
 author:
-  - name: Jeslin Tay 
+  - name: Jeslin Tay, Bernice Teo, Stella Shinanjaya
     url: 
     affiliation: School of Computing and Information Systems, Singapore Management University
     affiliation_url: https://scis.smu.edu.sg
@@ -15,6 +15,7 @@ output:
 
 # <span style="font-family:DM Sans;color:#2E6173;font-size:1.5em;">Title: Finding Capital City</span>
 
+![](logo.png)
 
 ## <span style="font-family:DM Sans;color:#2E6173;font-size:1em;">Project Summary</span>
 Our team is looking at proposing a site for the new capital city based on the accessibility, land suitability, safety (far away from disaster prone areas) while reducing environmental damage and cost.  
@@ -49,7 +50,7 @@ Select a suitable site for the proposed new capital city using the criteria belo
 #### <span style="font-family:DM Sans;color:#2E6173;font-size:0.75em;">Study Area</span>
 For this project, we will be looking at the East Kalimantan Province and it's cities - Kota Balikpapan, Kota Samarinda, Penajam Paser Utara and Kutai Kartanegara.
 
-![](photo6267113092190154102.jpg)
+![](3.PNG)
 
 #### <span style="font-family:DM Sans;color:#2E6173;font-size:0.75em;">Scope of Work</span>
 This list is not exhaustive: 
@@ -74,7 +75,6 @@ tabl <- "
 |indonesia-geospasial.com   | Shapefiles | Batas Desa & Data Kependudukan Tahun 2019 Seluruh Indonesia| https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html          |  
 |indonesia-geospasial.com    | Shapefiles      |RBI Provinsi Kalimantan Timur Perwilayah (Kabupaten/Kota) | https://www.indonesia-geospasial.com/2020/01/shp-rbi-provinsi-kalimantan-timur.html    |     
 |indonesia-geospasial.com |   TIF Files   |  DEM SRTM 30m, digital elevation model at 30m resolution | https://www.indonesia-geospasial.com/2020/01/download-dem-srtm-30-meter-se-indonesia.html |  
-|indonesia-geospasial.com |   Shapefiles   |  Geological data layer  | https://www.indonesia-geospasial.com/2020/03/download-data-shapefile-shp-geologi-se.html |
 |indonesia-geospasial.com |   Shapefiles   |  Forest fire hot spot data  | https://www.indonesia-geospasial.com/2020/04/shapefile-shp-titik-api-hotspot.html |  
 |indonesia-geospasial.com |   Shapefiles   |  Buildings and Settlements  | https://www.indonesia-geospasial.com/2020/12/download-shp-pemukiman-detail-seluruh.html |
 
